@@ -1,11 +1,15 @@
 # nginx_uwsgi_testing
 
-Expects at python virtual environment in venv under /var/www/demoapp/.
+This repo contains some testing files related to building out a 
+minimal server implementation for use on a Raspberry Pi 3 Model B.
 
-Built under Python 3.5.3
+It expects a python virtual environment in venv under /var/www/demoapp/.
 
-Web server in Nginx.
-Python app server through UWSGI.
+The code contained herein was built on Python 3.5.3.
+
+Web server:  Nginx.
+Python app server: UWSGI.
+
 Implements static and dynamic web pages.
 
-Work in progress...
+This remains and active work in progress...
