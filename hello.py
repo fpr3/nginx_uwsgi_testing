@@ -1,15 +1,16 @@
-from flask import Flask,render_template
+from flask import Flask, render_template
+
 app = Flask(__name__)
 
 @app.route("/")
 def index():
   data=['Index Page','The Main Entryway','red']
-  return render_template('template1.html',data=data)
+  return render_template('home.html',data=data)
 
-@app.route("/hello")
-def hello():
-  data=['Hello Page','Hello, World!','blue with chocolate chimps']
-  return render_template('template1.html',data=data)
+@app.route("/library")
+def library():
+  data=['Library Page','Hello, World!','blue with chocolate chimps']
+  return render_template('library.html',data=data)
 
 @app.route('/user/<username>')
 def show_user(username):

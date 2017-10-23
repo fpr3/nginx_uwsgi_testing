@@ -33,11 +33,21 @@
       <div class="container">
         <nav class="nav">
           <a class="nav-link active" href="/">Home</a>
-          <a class="nav-link" href="/hello">Library</a>
+          <a class="nav-link" href="/library">Library</a>
           <a class="nav-link" href="/countdown">Weather</a>
           <a class="nav-link disabled" href="/#">Other</a> 
           <a class="nav-link disabled" href="/#">Disabled</a>
         </nav>
+      </div>
+    </section>
+
+    <section id="main-content">
+      <div class="container">
+        {% block content %}
+        {% endblock %}
+        <h2>Main Template Content</h2>
+        <p>This is a placeholder paragraph for the main body contect 
+           of this template.</p>
       </div>
     </section>
 
