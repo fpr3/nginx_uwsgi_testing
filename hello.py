@@ -9,6 +9,8 @@ def index():
 
 @app.route("/library")
 def library():
+  # This page will need database access.
+  # Much code can be pulled from previous DCPL implementation!
   data=['Library Page','Hello, World!','blue with chocolate chimps']
   return render_template('library.html',data=data)
 
