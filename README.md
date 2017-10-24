@@ -12,4 +12,10 @@ Python app server: UWSGI.
 
 Implements static and dynamic web pages.
 
+Database connectivity is bolted on since it is integral to most 
+non-trivial apps. The database connection credentials file is moved 
+outside of the git repository directory to protect this information
+from inadvertent upload to github. The parent directory location is
+also unreachable by the webserver itself when loaded to the server.
+
 This remains and active work in progress...
