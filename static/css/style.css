@@ -1,6 +1,7 @@
 html, body {
     background:url('../img/bg1.jpg') center center no-repeat;
     height: 100%;
+    color:beige;
     background-size:cover;
 }
 

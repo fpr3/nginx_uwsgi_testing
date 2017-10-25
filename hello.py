@@ -4,14 +4,14 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-  data=['Index Page','The Main Entryway','red']
+  data=['Index Page','The Main Entryway','red',app.instance_path,app.root_path]
   return render_template('home.html',data=data)
 
 @app.route("/library")
 def library():
   # This page will need database access.
   # Much code can be pulled from previous DCPL implementation!
-  data=['Library Page','Hello, World!','blue with chocolate chimps']
+  data=['Library Page','Hello, World!','blue with chocolate chimps',app.instance_path,app.root_path]
   return render_template('library.html',data=data)
 
 @app.route('/user/<username>')
