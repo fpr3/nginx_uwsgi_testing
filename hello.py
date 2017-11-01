@@ -1,10 +1,11 @@
 from flask import Flask, render_template
+import sys
 
 app = Flask(__name__)
 
 @app.route("/")
 def index():
-  data=['Index Page','The Main Entryway','red',app.instance_path,app.root_path]
+  data=['Rossiter House','The Main Entryway','red',app.instance_path,app.root_path,sys.version]
   return render_template('home.html',data=data)
 
 @app.route("/library")

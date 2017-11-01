@@ -7,3 +7,6 @@ venvFlask
 *.pyc
 *.pyo
 
+# Graphics Development Files #
+##############################
+*.xcf
